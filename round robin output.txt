@@ -1,0 +1,21 @@
+run:
+enter the number of processes 
+3
+enter the burst time of process 1
+1
+enter the burst time of process 2
+3
+enter the burst time of process 3
+4
+enter Quantum 
+4
+the Waiting time are 
+0
+1
+4
+the average waiting time is 1.6666666
+the turn around time are 
+1
+4
+8
+the average turn around time is 4.3333335
