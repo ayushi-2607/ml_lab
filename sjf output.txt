@@ -1,0 +1,18 @@
+Enter the no. of processes 4
+
+Enter the burst time of processes 1
+2
+3
+2
+
+TAT: 1
+WT:  0
+TAT: 3
+WT:  1
+TAT: 5
+WT:  3
+TAT: 8
+WT:  5
+
+Average Turnaround Time:4.25
+Average Waiting Time:2.25
