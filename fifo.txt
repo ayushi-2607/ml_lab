@@ -1,0 +1,49 @@
+#include<iostream>
+using namespace std;
+
+bool check(int arr[], int size, int n) {
+    for(int i=0;i<size;i++)
+        if(arr[i]==n)
+            return false;
+    return true;
+}
+
+int main() {
+    int n, size,hit=0;
+    cout<<"Enter the no. of pages : ";
+        cin>>n;
+    cout<<"Enter the Page Size : ";
+        cin>>size;
+    int pages[n], result[size];
+    cout<<"Enter the pages : \n";
+    for(int i=0;i<n;i++)
+        cin>>pages[i];
+    for(int i=0,j=0;i<n;i++) {
+        if(j==size)
+            j=0;
+        if(i<size)
+            result[j]=pages[i], j++;
+        else if(check(result,size,pages[i]))        
+            result[j]=pages[i], j++;
+        else
+            hit++;
+    }
+    cout<<"hit= "<<hit;
+    int pf;
+    pf=n-hit;
+    cout<<"page fault= "<<pf;
+    return 0;
+}
+
+OUTPUT:
+Enter the no. of pages :
+3
+Enter the Page Size : 1024
+Enter the pages :
+1
+2
+3
+hit= 0page fault= 3
+--------------------------------
+Process exited after 20.03 seconds with return value 0
+Press any key to continue . . .
